@@ -46,18 +46,18 @@ export default function LanguageCenterPage() {
           
           <div className="mb-16 text-gray-900">
             <h2 className="text-2xl font-bold mb-6">Introduction</h2>
-            <p className="text-lg mb-6 text-gray-600 leading-relaxed">
+            <p className="text-xl mb-6 text-gray-600 leading-relaxed">
               A language center designed in Etiler, a district known for its affluent community and a significant number of young residents studying abroad.
             </p>
             
             <div className="space-y-6">
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 This language center is designed to provide a dynamic learning environment that fosters multilingual education and cultural exchange. Recognizing the area's international outlook, the facility caters to the needs of students preparing for international education.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 The architectural approach emphasizes open, collaborative spaces that encourage interaction between students of different languages and cultures. The design incorporates flexible classrooms that can be reconfigured for various teaching methodologies and group sizes.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 Careful consideration was given to acoustics, lighting, and spatial flow to create an optimal learning environment. The building integrates technology throughout, supporting digital learning tools and connected education.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function LanguageCenterPage() {
           
           <div className="mb-16 p-8 rounded-xl bg-gray-50">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               The concept revolves around creating spaces that facilitate language immersion and cultural exchange, with areas designed to simulate different global environments.
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function LanguageCenterPage() {
                 "Student collaboration areas",
                 "Outdoor learning terraces"
               ].map((feature, i) => (
-                <li key={i} className="flex items-start text-gray-600">
+                <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>

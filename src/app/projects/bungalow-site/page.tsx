@@ -47,18 +47,18 @@ export default function BungalowSitePage() {
           
           <div className="mb-16 text-gray-900">
             <h2 className="text-2xl font-bold mb-6">Introduction</h2>
-            <p className="text-lg mb-6 text-gray-600 leading-relaxed">
+            <p className="text-xl mb-6 text-gray-600 leading-relaxed">
               A comprehensive resort development featuring single and two-story bungalows with supporting amenities in a natural setting.
             </p>
             
             <div className="space-y-6">
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 This 3D model realistically represents a bungalow site, emphasizing accurate terrain, lighting, and materials. It captures the layout of single and two-story bungalows, along with key spaces like the restaurant, pool, and café.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 The design prioritizes harmony with the natural landscape, positioning buildings to maximize views and natural ventilation while minimizing environmental impact. Careful consideration was given to the flow between private accommodations and public amenities.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 With detailed textures and natural lighting, the model enhances realism, providing a clear and immersive visualization of the site. The architectural language maintains consistency throughout the development while allowing for variations that respond to specific site conditions.
               </p>
             </div>
@@ -66,7 +66,7 @@ export default function BungalowSitePage() {
           
           <div className="mb-16 p-8 rounded-xl bg-gray-50">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               The concept focuses on creating a resort experience that balances privacy with community, integrating built forms with the natural environment.
             </p>
           </div>
@@ -169,10 +169,10 @@ export default function BungalowSitePage() {
           
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-8 text-gray-900">Approach</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               The 3D modeling approach focused on realistic representation of materials, lighting, and spatial relationships to provide an accurate visualization of the completed project.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               The models show how natural materials like wood and stone integrate with the landscape, while thoughtful placement of structures preserves views and creates private outdoor spaces for each bungalow.
             </p>
           </div>
@@ -188,7 +188,7 @@ export default function BungalowSitePage() {
                 "Integrated landscape design",
                 "Sustainable site planning"
               ].map((feature, i) => (
-                <li key={i} className="flex items-start text-gray-600">
+                <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>

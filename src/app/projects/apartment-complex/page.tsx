@@ -47,18 +47,18 @@ export default function ApartmentComplexPage() {
           
           <div className="mb-16 text-gray-900">
             <h2 className="text-2xl font-bold mb-6">Introduction</h2>
-            <p className="text-lg mb-6 text-gray-600 leading-relaxed">
+            <p className="text-xl mb-6 text-gray-600 leading-relaxed">
               A detailed apartment complex design featuring carefully crafted elevations and thoughtfully selected materials for urban residential living.
             </p>
             
             <div className="space-y-6">
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 This project showcases a detailed apartment design, featuring carefully crafted elevations and thoughtfully selected materials. The design addresses the need for quality urban housing with attention to both aesthetic appeal and functional living spaces.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 Two distinct models were developed for different locations - one for Esenyurt and another for Silivri, each responding to their specific urban contexts and target demographics. The architectural expression balances contemporary design with timeless elements.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 Realistic textures, natural and interior lighting, and precise detailing bring the design to life, highlighting the building's form and materiality. The facades incorporate rhythmic elements and material variations to create visual interest while maintaining a cohesive overall appearance.
               </p>
             </div>
@@ -66,7 +66,7 @@ export default function ApartmentComplexPage() {
           
           <div className="mb-16 p-8 rounded-xl bg-white shadow-sm">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               The concept emphasizes creating distinctive residential buildings that establish a sense of place and identity within their respective neighborhoods, while providing comfortable and appealing living spaces for residents.
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function ApartmentComplexPage() {
           {/* Silivri Model Section */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Silivri Model</h2>
-            <p className="text-gray-600 mb-8">A modern residential development with balconies and terraced facades.</p>
+            <p className="text-lg text-gray-600 mb-8">A modern residential development with balconies and terraced facades.</p>
             
             <div className="mb-12">
               <h3 className="text-xl font-bold mb-6 text-gray-900">Front Elevation Views</h3>
@@ -135,7 +135,7 @@ export default function ApartmentComplexPage() {
           {/* Esenyurt Model Section */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Esenyurt Model</h2>
-            <p className="text-gray-600 mb-8">An alternative design approach for a different urban context.</p>
+            <p className="text-lg text-gray-600 mb-8">An alternative design approach for a different urban context.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
@@ -182,10 +182,10 @@ export default function ApartmentComplexPage() {
           
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-6 text-gray-900">Approach</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               The detailed 3D modeling approach allowed for exploration of different material options, lighting conditions, and viewing angles to refine the design.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               By creating photorealistic renderings in various lighting conditions, including both daytime and nighttime views, the models provide a comprehensive preview of how the buildings will appear and function in their environments.
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function ApartmentComplexPage() {
                 "Context-responsive design",
                 "Optimized natural lighting"
               ].map((feature, i) => (
-                <li key={i} className="flex items-start text-gray-600">
+                <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>

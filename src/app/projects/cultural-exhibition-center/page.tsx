@@ -46,18 +46,18 @@ export default function CulturalExhibitionCenterPage() {
           
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-6 text-gray-900">Introduction</h2>
-            <p className="text-lg mb-6 text-gray-600 leading-relaxed">
+            <p className="text-xl mb-6 text-gray-600 leading-relaxed">
               A cultural and exhibition center designed to showcase Istanbul's vast collection of historical artifacts, with over 700,000 pieces currently stored away.
             </p>
             
             <div className="space-y-6">
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 Located in a historically rich area overlooking the city's ancient walls and Yedikule, this center goes beyond a traditional museum. It offers an immersive experience with 3D animation rooms, interactive exhibitions, and a conference hall for cultural events.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 The architectural design respects the historical context while introducing contemporary elements that enhance the visitor experience. The building's form creates a dialogue with the ancient city walls, framing views and creating a visual connection to Istanbul's past.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 By bringing Turkish, Ottoman, and Byzantine history to life, the project serves as both a preservation space and a vibrant hub for education and engagement. The exhibition spaces are designed with flexibility in mind, allowing for changing displays and different curatorial approaches.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function CulturalExhibitionCenterPage() {
           
           <div className="mb-16 p-8 rounded-xl bg-gray-50">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               The concept integrates historical preservation with contemporary exhibition techniques, creating a bridge between past and present through architectural expression.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default function CulturalExhibitionCenterPage() {
                 "Historical context integration",
                 "Educational workshop areas"
               ].map((feature, i) => (
-                <li key={i} className="flex items-start text-gray-600">
+                <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
