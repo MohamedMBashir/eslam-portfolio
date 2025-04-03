@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useState, useEffect } from 'react';
-import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber';
-import { PerspectiveCamera, Sky, Environment, OrbitControls } from '@react-three/drei';
+import { Canvas, useFrame} from '@react-three/fiber';
+import { PerspectiveCamera, Sky, OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 // Hook to track scroll position
