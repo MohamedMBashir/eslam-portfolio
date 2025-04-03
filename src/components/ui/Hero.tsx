@@ -1,0 +1,63 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center bg-gray-50 py-24">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center md:text-left"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
+              Eslam Ramadan
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-gray-600">
+              Architecture Student & Designer
+            </p>
+            <div className="flex space-x-4 justify-center md:justify-start">
+              <a
+                href="#projects"
+                className="px-6 py-3 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors rounded-lg"
+              >
+                View Projects
+              </a>
+              <a
+                href="/portfolio.pdf"
+                download
+                className="px-6 py-3 border-2 border-gray-900 text-gray-900 font-medium hover:bg-gray-50 transition-colors rounded-lg"
+              >
+                Portfolio
+              </a>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative w-full max-w-[550px] mx-auto"
+          >
+            <div className="relative h-[700px] overflow-hidden rounded-2xl shadow-2xl">
+              <Image
+                src="/profile.jpg"
+                alt="Profile Photo"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 550px"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero; 
