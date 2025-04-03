@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import HeroBackground from "./HeroBackground";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gray-50 py-24">
-      <div className="container mx-auto px-4">
+    <section className="relative min-h-screen flex items-center py-24 overflow-hidden bg-gray-50">
+      <div className="hidden md:block absolute inset-0 z-0 pointer-events-auto"> 
+        <HeroBackground />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 pointer-events-none">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -20,7 +24,7 @@ const Hero = () => {
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
               Architecture Student & Designer
             </p>
-            <div className="flex space-x-4 justify-center md:justify-start">
+            <div className="flex space-x-4 justify-center md:justify-start pointer-events-auto">
               <a
                 href="#projects"
                 className="px-6 py-3 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors rounded-lg"
@@ -41,7 +45,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-full max-w-[550px] mx-auto"
+            className="relative w-full max-w-[550px] mx-auto pointer-events-auto"
           >
             <div className="relative h-[700px] overflow-hidden rounded-2xl shadow-2xl">
               <Image
