@@ -33,7 +33,8 @@ const Hero = () => {
               </a>
               <a
                 href="/portfolio.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 border-2 border-gray-900 text-gray-900 font-medium hover:bg-gray-50 transition-colors rounded-lg"
               >
                 Portfolio
