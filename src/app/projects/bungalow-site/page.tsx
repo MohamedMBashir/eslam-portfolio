@@ -18,12 +18,12 @@ export default function BungalowSitePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
             <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Client</h3>
-              <p className="text-gray-900">Resort Development Group</p>
+              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Company</h3>
+              <p className="text-gray-900">Kapadokya Mimarlık</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Year</h3>
-              <p className="text-gray-900">2022</p>
+              <p className="text-gray-900">2024</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Location</h3>
@@ -62,13 +62,6 @@ export default function BungalowSitePage() {
                 With detailed textures and natural lighting, the model enhances realism, providing a clear and immersive visualization of the site. The architectural language maintains consistency throughout the development while allowing for variations that respond to specific site conditions.
               </p>
             </div>
-          </div>
-          
-          <div className="mb-16 p-8 rounded-xl bg-gray-50">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              The concept focuses on creating a resort experience that balances privacy with community, integrating built forms with the natural environment.
-            </p>
           </div>
           
           {/* Full Site Overview Section */}

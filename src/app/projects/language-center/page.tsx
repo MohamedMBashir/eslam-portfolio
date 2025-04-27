@@ -18,12 +18,12 @@ export default function LanguageCenterPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
             <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Client</h3>
-              <p className="text-gray-900">Educational Institution</p>
+              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Target Group</h3>
+              <p className="text-gray-900">Etiler young population</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Year</h3>
-              <p className="text-gray-900">2023</p>
+              <p className="text-gray-900">2024</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Location</h3>
@@ -57,16 +57,13 @@ export default function LanguageCenterPage() {
               <p className="text-lg text-gray-600 leading-relaxed">
                 The architectural approach emphasizes open, collaborative spaces that encourage interaction between students of different languages and cultures. The design incorporates flexible classrooms that can be reconfigured for various teaching methodologies and group sizes.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Careful consideration was given to acoustics, lighting, and spatial flow to create an optimal learning environment. The building integrates technology throughout, supporting digital learning tools and connected education.
-              </p>
             </div>
           </div>
           
           <div className="mb-16 p-8 rounded-xl bg-gray-50">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              The concept revolves around creating spaces that facilitate language immersion and cultural exchange, with areas designed to simulate different global environments.
+              The project was designed to adapt to the site's sloped topography. To provide students with larger spaces and opportunities for interaction, a terrace and a garden were created. Eaves were added to the roof and garden areas to provide protection and enhance the aesthetic quality.
             </p>
           </div>
 
@@ -100,7 +97,6 @@ export default function LanguageCenterPage() {
             <h2 className="text-2xl font-bold mb-8 text-gray-900">Floor Plans</h2>
             <div className="grid grid-cols-1 gap-8">
               <div>
-                <h3 className="font-medium mb-3 text-gray-900">First Floor Plan</h3>
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
                   <Image
                     src="/projects/Project 1/Plan 1.jpg"
@@ -112,7 +108,6 @@ export default function LanguageCenterPage() {
                 </div>
               </div>
               <div>
-                <h3 className="font-medium mb-3 text-gray-900">Second Floor Plan</h3>
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
                   <Image
                     src="/projects/Project 1/Plan 2.jpg"
@@ -123,9 +118,7 @@ export default function LanguageCenterPage() {
                   />
                 </div>
               </div>
-              {/* Add additional plan if available */}
               <div>
-                <h3 className="font-medium mb-3 text-gray-900">Third Floor Plan</h3>
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
                   <Image
                     src="/projects/Project 1/Plan 3.jpg"
@@ -135,6 +128,22 @@ export default function LanguageCenterPage() {
                     sizes="(max-width: 768px) 100vw, 1200px"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Detailed Floor Plan Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8 text-gray-900">First Floor Plan 1/50</h2>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/projects/Project 1/Plan Details 1-50.jpg"
+                  alt="First floor plan detailed"
+                  fill
+                  className="object-contain bg-white"
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
               </div>
             </div>
           </div>
@@ -182,6 +191,22 @@ export default function LanguageCenterPage() {
             </div>
           </div>
           
+          {/* Section Details */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8 text-gray-900">Section Details 1/20</h2>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/projects/Project 1/Section Details 1-20.jpg"
+                  alt="Section details at 1:20 scale"
+                  fill
+                  className="object-contain bg-white"
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
+              </div>
+            </div>
+          </div>
+          
           {/* 3D Renders */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-8 text-gray-900">3D Renders</h2>
@@ -208,17 +233,20 @@ export default function LanguageCenterPage() {
           </div>
           
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900">Key Features</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-900">Building Program</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                "Flexible classrooms for different teaching methodologies",
-                "Cultural immersion spaces",
-                "Multimedia language labs",
-                "Student collaboration areas",
-                "Outdoor learning terraces"
+                "Classrooms",
+                "Computer Room",
+                "Library",
+                "Reception",
+                "Teachers Room",
+                "Storage",
+                "Cafeteria",
+                "Open-air Class"
               ].map((feature, i) => (
                 <li key={i} className="flex items-start text-lg text-gray-600">
-                  <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span>{feature}</span>

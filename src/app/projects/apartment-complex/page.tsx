@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ApartmentComplexPage() {
   return (
-    <article className="pt-28 pb-24 bg-gray-50">
+    <article className="pt-28 pb-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <Link href="/#projects" className="inline-flex items-center mb-8 text-gray-600 hover:opacity-75 transition-opacity">
@@ -16,14 +16,14 @@ export default function ApartmentComplexPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Apartment Complex</h1>
           <p className="text-xl text-gray-600 mb-8">Residential Building Design</p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-white shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
             <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Client</h3>
-              <p className="text-gray-900">Real Estate Developer</p>
+              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Company</h3>
+              <p className="text-gray-900">Kapadokya Mimarlık</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Year</h3>
-              <p className="text-gray-900">2022</p>
+              <p className="text-gray-900">2024</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Location</h3>
@@ -64,12 +64,7 @@ export default function ApartmentComplexPage() {
             </div>
           </div>
           
-          <div className="mb-16 p-8 rounded-xl bg-white shadow-sm">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              The concept emphasizes creating distinctive residential buildings that establish a sense of place and identity within their respective neighborhoods, while providing comfortable and appealing living spaces for residents.
-            </p>
-          </div>
+
           
           {/* Silivri Model Section */}
           <div className="mb-16">
@@ -199,7 +194,6 @@ export default function ApartmentComplexPage() {
                 "Balconies and outdoor spaces",
                 "High-quality material selections",
                 "Context-responsive design",
-                "Optimized natural lighting"
               ].map((feature, i) => (
                 <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

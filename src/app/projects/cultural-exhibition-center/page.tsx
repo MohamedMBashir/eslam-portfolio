@@ -18,12 +18,12 @@ export default function CulturalExhibitionCenterPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
             <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Client</h3>
-              <p className="text-gray-900">Istanbul Municipality</p>
+              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Target Group</h3>
+              <p className="text-gray-900">Local and international tourists</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Year</h3>
-              <p className="text-gray-900">2023</p>
+              <p className="text-gray-900">2024</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Location</h3>
@@ -66,7 +66,7 @@ export default function CulturalExhibitionCenterPage() {
           <div className="mb-16 p-8 rounded-xl bg-gray-50">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              The concept integrates historical preservation with contemporary exhibition techniques, creating a bridge between past and present through architectural expression.
+              We began by stretching the volume to align seamlessly with the historical walls, respecting and enhancing their presence. Next, we carved out a dominant entrance strategically positioned to be visible from behind the historic structure, inviting and guiding visitors. Finally, we rotated the western section of the building to frame and emphasize the site's most significant historical views.
             </p>
           </div>
 
@@ -206,10 +206,33 @@ export default function CulturalExhibitionCenterPage() {
                   sizes="(max-width: 768px) 100vw, 600px"
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
+            </div>
+          </div>
+
+          {/* Exploded Diagram */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8 text-gray-900">Exploded Diagram</h2>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/projects/Project 2/Exploded Diagram.jpg"
+                  alt="Building exploded diagram"
+                  fill
+                  className="object-contain bg-white"
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Section Details */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8 text-gray-900">Section Details 1/50</h2>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src="/projects/Project 2/Dystem Details Section.jpg"
-                  alt="System detail section"
+                  alt="Section details at 1:50 scale"
                   fill
                   className="object-contain bg-white"
                   sizes="(max-width: 768px) 100vw, 1200px"
@@ -262,15 +285,18 @@ export default function CulturalExhibitionCenterPage() {
           </div>
           
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900">Key Features</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-900">Building Program</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                "Interactive exhibition spaces",
-                "3D animation rooms",
-                "Conference and event hall",
-                "Artifact preservation facilities",
-                "Historical context integration",
-                "Educational workshop areas"
+                "3D Animation Room", 
+                "Conference Hall",
+                "Storage",
+                "Restoration Laboratory",
+                "Temporary Exhibition Center",
+                "Artifacts Exhibition Areas",
+                "Administration",
+                "Restaurant and Café",
+                "Shop"
               ].map((feature, i) => (
                 <li key={i} className="flex items-start text-lg text-gray-600">
                   <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
