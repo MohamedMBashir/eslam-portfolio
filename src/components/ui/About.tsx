@@ -16,7 +16,7 @@ const About = () => {
           
           <div className="max-w-3xl mx-auto">
             <p className="text-xl text-gray-800 mb-6 leading-relaxed">
-              Architecture taught me how to analyze, define, and solve complex problems. Each project strengthened my skills in finding creative solutions and paying attention to detail. Architecture, with both its technical and artistic aspects, has become an inspiring and rewarding profession for me. Moreover, it has taught me to analyze the context around me, addressing surrounding issues and finding ways to solve them.
+              Architecture teaches me how to analyze, define, and solve complex problems. Each project strengthened my skills in finding creative solutions and paying attention to detail. Architecture, with both its technical and artistic aspects, has become an inspiring and rewarding profession for me. Moreover, it has taught me to analyze the context around me, addressing surrounding issues and finding ways to solve them.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
@@ -29,6 +29,7 @@ const About = () => {
                 <h3 className="font-bold text-lg mb-3 text-gray-900">Languages</h3>
                 <p className="text-gray-700">Turkish</p>
                 <p className="text-gray-700">English</p>
+                <p className="text-gray-700">Arabic</p>
               </div>
             </div>
           </div>
