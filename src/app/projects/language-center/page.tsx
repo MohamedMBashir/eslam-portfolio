@@ -1,299 +1,305 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import TranslatedProjectLayout from "@/components/ui/TranslatedProjectLayout";
+import { useLanguage } from "@/i18n/LanguageContext";
+
+// Helper components for translation
+function TranslatedHeading({ title }: { title: string }) {
+  const { t } = useLanguage();
+  return <h2 className="text-2xl font-bold mb-8 text-gray-900">{t(title)}</h2>;
+}
+
+function TranslatedSection({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-16 text-gray-900">
+      <TranslatedHeading title={title} />
+      {children}
+    </div>
+  );
+}
 
 export default function LanguageCenterPage() {
+  const { t } = useLanguage();
+  
   return (
-    <article className="pt-28 pb-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <Link href="/#projects" className="inline-flex items-center mb-8 text-gray-600 hover:opacity-75 transition-opacity">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Projects
-          </Link>
-          
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Language Center</h1>
-          <p className="text-xl text-gray-600 mb-8">Etiler District Educational Facility</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
-            <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Target Group</h3>
-              <p className="text-gray-900">Etiler young population</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Year</h3>
-              <p className="text-gray-900">2024</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">Location</h3>
-              <p className="text-gray-900">Etiler, Istanbul</p>
-            </div>
+    <TranslatedProjectLayout title="languageCenter" subtitle="etilerDistrict">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 rounded-xl bg-gray-50">
+        <div>
+          <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">{t("targetGroup")}</h3>
+          <p className="text-gray-900">{t("etilerYoungPopulation")}</p>
+        </div>
+        <div>
+          <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">{t("year")}</h3>
+          <p className="text-gray-900">2024</p>
+        </div>
+        <div>
+          <h3 className="font-bold text-sm uppercase text-gray-500 mb-1">{t("location")}</h3>
+          <p className="text-gray-900">{t("etilerLocation")}</p>
+        </div>
+      </div>
+      
+      <div className="mb-12">
+        <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-xl">
+          <Image
+            src="/projects/Project 1/Model Render 1.jpg"
+            alt={t("languageCenterMainView")}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 1200px"
+          />
+        </div>
+      </div>
+      
+      <TranslatedSection title="introduction">
+        <p className="text-xl mb-6 text-gray-600 leading-relaxed">
+          {t("languageCenterIntro1")}
+        </p>
+        
+        <div className="space-y-6">
+          <p className="text-lg text-gray-600 leading-relaxed">
+            {t("languageCenterIntro2")}
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            {t("languageCenterIntro3")}
+          </p>
+        </div>
+      </TranslatedSection>
+      
+      <div className="mb-16 p-8 rounded-xl bg-gray-50">
+        <TranslatedHeading title="concept" />
+        <p className="text-lg text-gray-600 leading-relaxed">
+          {t("languageCenterConcept")}
+        </p>
+      </div>
+
+      {/* Diagrams Section */}
+      <div className="mb-16">
+        <TranslatedHeading title="conceptDiagrams" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Concept Diagram.jpg"
+              alt={t("conceptDiagramAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
           </div>
-          
-          <div className="mb-12">
-            <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-xl">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Mass-Terrain Diagram.jpg"
+              alt={t("massTerrainDiagramAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Plans Section */}
+      <div className="mb-16">
+        <TranslatedHeading title="floorPlans" />
+        <div className="grid grid-cols-1 gap-8">
+          <div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/projects/Project 1/Model Render 1.jpg"
-                alt="Language Center - Main View"
+                src="/projects/Project 1/Plan 1.jpg"
+                alt={t("firstFloorPlanAlt")}
                 fill
-                priority
-                className="object-cover"
+                className="object-contain bg-white"
                 sizes="(max-width: 768px) 100vw, 1200px"
               />
             </div>
           </div>
-          
-          <div className="mb-16 text-gray-900">
-            <h2 className="text-2xl font-bold mb-6">Introduction</h2>
-            <p className="text-xl mb-6 text-gray-600 leading-relaxed">
-              A language center designed in Etiler, a district known for its affluent community and a significant number of young residents studying abroad.
-            </p>
-            
-            <div className="space-y-6">
-              <p className="text-lg text-gray-600 leading-relaxed">
-                This language center is designed to provide a dynamic learning environment that fosters multilingual education and cultural exchange. Recognizing the area's international outlook, the facility caters to the needs of students preparing for international education.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                The architectural approach emphasizes open, collaborative spaces that encourage interaction between students of different languages and cultures. The design incorporates flexible classrooms that can be reconfigured for various teaching methodologies and group sizes.
-              </p>
+          <div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/projects/Project 1/Plan 2.jpg"
+                alt={t("secondFloorPlanAlt")}
+                fill
+                className="object-contain bg-white"
+                sizes="(max-width: 768px) 100vw, 1200px"
+              />
             </div>
           </div>
-          
-          <div className="mb-16 p-8 rounded-xl bg-gray-50">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Concept</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              The project was designed to adapt to the site's sloped topography. To provide students with larger spaces and opportunities for interaction, a terrace and a garden were created. Eaves were added to the roof and garden areas to provide protection and enhance the aesthetic quality.
-            </p>
-          </div>
-
-          {/* Diagrams Section */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">Concept Diagrams</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Concept Diagram.jpg"
-                  alt="Concept diagram"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Mass-Terrain Diagram.jpg"
-                  alt="Mass and terrain diagram"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* Plans Section */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">Floor Plans</h2>
-            <div className="grid grid-cols-1 gap-8">
-              <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src="/projects/Project 1/Plan 1.jpg"
-                    alt="First floor plan"
-                    fill
-                    className="object-contain bg-white"
-                    sizes="(max-width: 768px) 100vw, 1200px"
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src="/projects/Project 1/Plan 2.jpg"
-                    alt="Second floor plan"
-                    fill
-                    className="object-contain bg-white"
-                    sizes="(max-width: 768px) 100vw, 1200px"
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src="/projects/Project 1/Plan 3.jpg"
-                    alt="Third floor plan"
-                    fill
-                    className="object-contain bg-white"
-                    sizes="(max-width: 768px) 100vw, 1200px"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Detailed Floor Plan Section */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">First Floor Plan 1/50</h2>
-            <div className="grid grid-cols-1 gap-8">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Plan Details 1-50.jpg"
-                  alt="First floor plan detailed"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* Elevations and Sections */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">Elevations & Sections</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/East elevation 1-50.jpg"
-                  alt="East elevation"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Sout Elevtion 1-50.jpg"
-                  alt="South elevation"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Section Details 1-50.jpg"
-                  alt="Section details"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Terrain Section.jpg"
-                  alt="Terrain section"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* Section Details */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">Section Details 1/20</h2>
-            <div className="grid grid-cols-1 gap-8">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Section Details 1-20.jpg"
-                  alt="Section details at 1:20 scale"
-                  fill
-                  className="object-contain bg-white"
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* 3D Renders */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-gray-900">3D Renders</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Model Render 2.jpg"
-                  alt="3D render view 1"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src="/projects/Project 1/Model Render 3.jpg"
-                  alt="3D render view 2"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-              </div>
-            </div>
-          </div>
-          
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900">Building Program</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                "Classrooms",
-                "Computer Room",
-                "Library",
-                "Reception",
-                "Teachers Room",
-                "Storage",
-                "Cafeteria",
-                "Open-air Class"
-              ].map((feature, i) => (
-                <li key={i} className="flex items-start text-lg text-gray-600">
-                  <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div className="border-t border-gray-100 pt-12 mt-12">
-            <h3 className="text-xl font-bold mb-8 text-gray-900">Explore Other Projects</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {[
-                {
-                  slug: "cultural-exhibition-center",
-                  title: "Cultural Exhibition Center",
-                  image: "/projects/Project 2/Model Render 1.jpg"
-                },
-                {
-                  slug: "bungalow-site",
-                  title: "Bungalow Site",
-                  image: "/projects/Project 3/Bungalow Site, the best photo.jpg"
-                },
-                {
-                  slug: "apartment-complex",
-                  title: "Apartment Complex",
-                  image: "/projects/Project 4/Silivri Model Front Elevation Morning, The best one.jpg"
-                }
-              ].map((project) => (
-                <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md mb-3">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  </div>
-                  <h4 className="font-medium group-hover:opacity-75 transition-opacity text-gray-900">
-                    {project.title}
-                  </h4>
-                </Link>
-              ))}
+          <div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/projects/Project 1/Plan 3.jpg"
+                alt={t("thirdFloorPlanAlt")}
+                fill
+                className="object-contain bg-white"
+                sizes="(max-width: 768px) 100vw, 1200px"
+              />
             </div>
           </div>
         </div>
       </div>
-    </article>
+      
+      {/* Detailed Floor Plan Section */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-bold mb-8 text-gray-900">{t("firstFloorDetailedPlan")}</h2>
+        <div className="grid grid-cols-1 gap-8">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Plan Details 1-50.jpg"
+              alt={t("firstFloorDetailedAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 1200px"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Elevations and Sections */}
+      <div className="mb-16">
+        <TranslatedHeading title="elevationsAndSections" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/East elevation 1-50.jpg"
+              alt={t("eastElevationAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Sout Elevtion 1-50.jpg"
+              alt={t("southElevationAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Section Details 1-50.jpg"
+              alt={t("sectionDetailsAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Terrain Section.jpg"
+              alt={t("terrainSectionAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Section Details */}
+      <div className="mb-16">
+        <TranslatedHeading title="sectionDetails" />
+        <div className="grid grid-cols-1 gap-8">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Section Details 1-20.jpg"
+              alt={t("sectionDetailsScaleAlt")}
+              fill
+              className="object-contain bg-white"
+              sizes="(max-width: 768px) 100vw, 1200px"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* 3D Renders */}
+      <div className="mb-16">
+        <TranslatedHeading title="renders" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Model Render 2.jpg"
+              alt={t("renderView1Alt")}
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+            <Image
+              src="/projects/Project 1/Model Render 3.jpg"
+              alt={t("renderView2Alt")}
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, 600px"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div className="mb-16">
+        <TranslatedHeading title="buildingProgram" />
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { key: "classrooms" },
+            { key: "computerRoom" },
+            { key: "library" },
+            { key: "reception" },
+            { key: "teachersRoom" },
+            { key: "storage" },
+            { key: "cafeteria" },
+            { key: "openAirClass" }
+          ].map((feature, i) => (
+            <li key={i} className="flex items-start text-lg text-gray-600">
+              <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>{t(feature.key)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <div className="border-t border-gray-100 pt-12 mt-12">
+        <h3 className="text-xl font-bold mb-8 text-gray-900">{t("exploreOtherProjects")}</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {[
+            {
+              slug: "cultural-exhibition-center",
+              titleKey: "culturalExhibitionCenter",
+              image: "/projects/Project 2/Model Render 1.jpg"
+            },
+            {
+              slug: "bungalow-site",
+              titleKey: "bungalowSite",
+              image: "/projects/Project 3/Bungalow Site, the best photo.jpg"
+            },
+            {
+              slug: "apartment-complex",
+              titleKey: "apartmentComplex",
+              image: "/projects/Project 4/Silivri Model Front Elevation Morning, The best one.jpg"
+            }
+          ].map((project) => (
+            <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md mb-3">
+                <Image
+                  src={project.image}
+                  alt={t(project.titleKey)}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <h4 className="font-medium group-hover:opacity-75 transition-opacity text-gray-900">
+                {t(project.titleKey)}
+              </h4>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </TranslatedProjectLayout>
   );
 } 

@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { LanguageProvider } from "@/i18n/LanguageContext";
+import ClientLayout from "@/components/layout/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,16 +31,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <Navbar />
-        <main className="pt-16">
-          {children}
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <ClientLayout>
+            <Navbar />
+            <main className="pt-16">
+              {children}
+            </main>
+            <Footer />
+          </ClientLayout>
+        </LanguageProvider>
       </body>
     </html>
   );

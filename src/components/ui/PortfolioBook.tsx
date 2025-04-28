@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 // Define the Props for the Page component
 interface PageProps {
@@ -44,6 +45,7 @@ interface PageFlip {
 }
 
 const PortfolioBook = () => {
+  const { t } = useLanguage();
   const [windowWidth, setWindowWidth] = useState(0);
   const [totalPages, setTotalPages] = useState(26); // We know we have 26 pages
   const [currentPage, setCurrentPage] = useState(0);
@@ -113,7 +115,7 @@ const PortfolioBook = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">Portfolio</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">{t("portfolio")}</h2>
           
           <div className="flex justify-center mb-8">
             <div className="relative book-container" style={{ 

@@ -4,13 +4,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import LanguageSelector from "@/components/ui/LanguageSelector";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
   
   const navItems = [
-    { name: "Home", path: "/" },
+    { name: t("home"), path: "/" },
   ];
 
   const toggleMobileMenu = () => {
@@ -56,8 +59,11 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="relative py-2 px-1 text-gray-600 hover:text-white transition-colors duration-300"
               >
-                CV
+                {t("cv")}
               </a>
+            </li>
+            <li>
+              <LanguageSelector />
             </li>
           </ul>
         </nav>
@@ -108,11 +114,14 @@ const Navbar = () => {
                 href="/CV.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
-                 onClick={toggleMobileMenu}
+                onClick={toggleMobileMenu}
                 className="block py-2 px-4 text-center text-gray-600 hover:text-white transition-colors duration-300"
               >
-                CV
+                {t("cv")}
               </a>
+            </li>
+            <li>
+              <LanguageSelector />
             </li>
           </ul>
         </motion.nav>

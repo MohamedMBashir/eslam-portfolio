@@ -3,8 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import HeroBackground from "./HeroBackground";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center py-24 overflow-hidden bg-gray-50">
       <div className="hidden md:block absolute inset-0 z-0 pointer-events-auto"> 
@@ -22,14 +25,14 @@ const Hero = () => {
               Eslam Ramadan
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
-              Architecture Student & Designer
+              {t("iam")} {t("architectureStudent")}
             </p>
             <div className="flex space-x-4 justify-center md:justify-start pointer-events-auto">
               <a
                 href="#projects"
                 className="px-6 py-3 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors rounded-lg"
               >
-                View Projects
+                {t("viewProjects")}
               </a>
               <a
                 href="/portfolio.pdf"
@@ -37,7 +40,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="px-6 py-3 border-2 border-gray-900 text-gray-900 font-medium hover:bg-gray-50 transition-colors rounded-lg"
               >
-                Portfolio
+                {t("portfolio")}
               </a>
             </div>
           </motion.div>
