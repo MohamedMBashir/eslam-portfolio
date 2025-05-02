@@ -68,7 +68,8 @@ const Navbar = () => {
           </ul>
         </nav>
         
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-4">
+          <LanguageSelector />
           <button onClick={toggleMobileMenu} className="p-2 text-white focus:outline-none">
             {isMobileMenuOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
@@ -119,9 +120,6 @@ const Navbar = () => {
               >
                 {t("cv")}
               </a>
-            </li>
-            <li>
-              <LanguageSelector />
             </li>
           </ul>
         </motion.nav>
