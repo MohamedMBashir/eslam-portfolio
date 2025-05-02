@@ -35,9 +35,10 @@ export const translations = {
     languageCenterHover: 'This project is a language center designed in Etiler, a district known for its affluent community and a significant number of young residents studying abroad. Recognizing the area\'s international outlook, the center aims to provide a dynamic learning environment that fosters multilingual education and cultural exchange.',
     
     // Project 2
-    culturalExhibitionCenter: 'Cultural Exhibition Center',
+    culturalExhibitionCenter: 'Archaeology Museum',
     istanbulHistorical: 'Istanbul Historical Artifacts Showcase',
-    culturalExhibitionHover: 'This project is a cultural and exhibition center designed to showcase Istanbul\'s vast collection of historical artifacts, with over 700,000 pieces currently stored away. Located in a historically rich area overlooking the city\'s ancient walls and Yedikule, the center goes beyond a traditional museum. It offers an immersive experience with 3D animation rooms, interactive exhibitions, and a conference hall for cultural events. By bringing Turkish, Ottoman, and Byzantine history to life, the project serves as both a preservation space and a vibrant hub for education and engagement.',
+    culturalExhibitionHover: 'Istanbul, a city layered with the legacies of powerful empires, holds a rich historical heritage. Today, over 700,000 artifacts remain hidden in storage, unseen by the public due to a lack of adequate infrastructure. To bring these invaluable treasures back into the light, new cultural spaces are essential. Situated in a historically significant area overlooking the ancient city walls and Yedikule, this center is more than just a museum. It offers an immersive experience through 3D animation rooms, interactive exhibitions, and a conference hall for cultural events. By bringing Turkish, Ottoman, and Byzantine history to life, the project not only preserves the past but also creates a dynamic hub for education, discovery, and cultural engagement.',
+    historicalGardens: 'Located near Yedikule and the historic walls of Istanbul, the site was once home to centuries-old gardens, recognized by UNESCO as a World Heritage site since 1985. Over time, these historic market gardens were lost and the area turned into an unstructured green and sandy landscape. To revive this forgotten heritage, the project introduces three thematic gardens representing the Byzantine, Greek, and Ottoman eras. Each garden features plants and flowers characteristic of its time, allowing visitors to sense the deep connection between nature and history as they walk through these spaces.',
     
     // Project 3
     bungalowSite: 'Bungalow Site',
@@ -246,9 +247,10 @@ export const translations = {
     languageCenterHover: 'Bu proje, varlıklı topluluğu ve yurtdışında okuyan çok sayıda genç sakini ile tanınan bir bölge olan Etiler\'de tasarlanmış bir dil merkezidir. Bölgenin uluslararası bakış açısını göz önünde bulundurarak, merkez çok dilli eğitimi ve kültürel alışverişi teşvik eden dinamik bir öğrenme ortamı sunmayı amaçlamaktadır.',
     
     // Project 2
-    culturalExhibitionCenter: 'Arkeoloji ve Kültürel Deneyim Merkezi',
+    culturalExhibitionCenter: 'Arkeoloji Müzesi',
     istanbulHistorical: 'İstanbul Tarihi Eserler Vitrini',
-    culturalExhibitionHover: 'Bu proje, şu anda 700.000\'den fazla parça depolanmış olan İstanbul\'un geniş tarihi eser koleksiyonunu sergilemek için tasarlanmış bir kültür ve sergi merkezidir. Şehrin kadim surları ve Yedikule\'ye bakan tarihi açıdan zengin bir bölgede yer alan merkez, geleneksel bir müzenin ötesine geçiyor. 3D animasyon odaları, interaktif sergiler ve kültürel etkinlikler için bir konferans salonu ile sürükleyici bir deneyim sunuyor. Türk, Osmanlı ve Bizans tarihini canlandırarak, proje hem bir koruma alanı hem de eğitim ve katılım için canlı bir merkez görevi görüyor.',
+    culturalExhibitionHover: "Güçlü imparatorlukların mirasını taşıyan katmanlı yapısıyla İstanbul, son derece zengin bir tarihi geçmişe sahiptir. Bugün, 700 bini aşkın eser, yeterli altyapı eksikliği nedeniyle depolarda sergilenemeden beklemektedir. Bu değerli eserlerin yeniden gün yüzüne çıkması için yeni kültürel alanlara ihtiyaç duyulmaktadır. Tarihi surlara ve Yedikule'ye hakim konumda yer alan bu merkez, geleneksel bir müzenin ötesine geçmektedir. 3D animasyon odaları, etkileşimli sergiler ve kültürel etkinliklere ev sahipliği yapacak bir konferans salonuyla ziyaretçilere bütüncül bir deneyim sunar. Türk, Osmanlı ve Bizans tarihini canlandırarak geçmişi koruyan bu proje, aynı zamanda eğitim, keşif ve kültürel etkileşim için canlı bir merkez işlevi görmektedir.",
+    historicalGardens: 'Yedikule ve İstanbul surlarının çevresinde yer alan, 5. yüzyıldan beri varlığını sürdüren ve UNESCO Dünya Mirası listesinde yer alan tarihi bostanlar, proje alanında da geçmişte önemli bir yere sahipti. Zamanla yok olan bu kültürel mirası yeniden canlandırmak amacıyla projede Bizans, Yunan ve Osmanlı dönemlerine ait üç tematik bahçe oluşturuldu. Her bahçede döneme özgü bitki ve çiçek türleri yer alıyor; ziyaretçiler bu bahçelerden geçerken geçmişin doğayla kurduğu bağı hissedebiliyor.',
     
     // Project 3
     bungalowSite: 'Bungalov Alanı',
@@ -314,7 +316,7 @@ export const translations = {
     copyright: '© 2023 Eslam Ramadan. Tüm hakları saklıdır.',
     
     // Project 2 Details
-    culturalExhibitionIntro1: 'İstanbul’da 700.000’den fazla arkeolojik eser müze depolarında sergilenemeden beklemektedir. Mevcut müzelerin yetersizliği bu ihtiyaca cevap verememektedir. Bu durumdan yola çıkarak, eserleri görünür kılacak ve halka ulaştıracak bir kültür ve sergi merkezi tasarlanmıştır.',
+    culturalExhibitionIntro1: 'İstanbul\'da 700.000\'den fazla arkeolojik eser müze depolarında sergilenemeden beklemektedir. Mevcut müzelerin yetersizliği bu ihtiyaca cevap verememektedir. Bu durumdan yola çıkarak, eserleri görünür kılacak ve halka ulaştıracak bir kültür ve sergi merkezi tasarlanmıştır.',
     culturalExhibitionIntro2: 'Şehrin kadim surları ve Yedikule\'ye bakan, tarihi açıdan zengin bir bölgede bulunan bu merkez, geleneksel bir müzenin ötesine geçiyor. 3D animasyon odaları, interaktif sergiler ve kültürel etkinlikler için bir konferans salonu ile sürükleyici bir deneyim sunuyor.',
     culturalExhibitionIntro3: 'Mimari tasarım, ziyaretçi deneyimini zenginleştiren çağdaş öğeler sunarken tarihi bağlamı da dikkate alıyor. Binanın formu, antik şehir surları ile bir diyalog oluşturarak, manzaraları çerçeveliyor ve İstanbul\'un geçmişiyle görsel bir bağlantı kuruyor.',
     culturalExhibitionIntro4: 'Türk, Osmanlı ve Bizans tarihini canlandırarak, proje hem bir koruma alanı hem de eğitim ve katılım için canlı bir merkez görevi görüyor. Sergi alanları, değişen sergiler ve farklı küratör yaklaşımlarına olanak tanıyacak şekilde esneklik düşünülerek tasarlanmıştır.',

@@ -110,6 +110,11 @@ export default function CulturalExhibitionCenterPage() {
             />
           </div>
         </div>
+        <div className="mt-8">
+          <p className="text-lg text-gray-600 leading-relaxed">
+            {t("historicalGardens")}
+          </p>
+        </div>
       </div>
       
       {/* Mass Diagrams */}
