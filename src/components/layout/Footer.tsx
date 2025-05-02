@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaLinkedinIn, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
@@ -23,20 +23,25 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/eslam-ramadan-7a38a4268/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-800 text-white rounded-xl hover:bg-gray-700 transition-colors"
+                className="p-3 bg-gray-800 text-blue-500 rounded-xl hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaLinkedinIn className="w-5 h-5" />
               </motion.a>
-              <motion.div
-                className="p-3 bg-gray-800 text-gray-600 rounded-xl cursor-not-allowed"
+              <motion.a
+                href="https://wa.me/905050405951"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-800 text-green-500 rounded-xl hover:bg-gray-700 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <FaInstagram className="w-5 h-5" />
-              </motion.div>
+                <FaWhatsapp className="w-5 h-5" />
+              </motion.a>
               <motion.a
                 href="mailto:eslaaanramadann@gmail.com"
-                className="p-3 bg-gray-800 text-white rounded-xl hover:bg-gray-700 transition-colors"
+                className="p-3 bg-gray-800 text-red-500 rounded-xl hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
