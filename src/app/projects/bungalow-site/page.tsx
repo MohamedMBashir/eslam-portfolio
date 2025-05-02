@@ -64,9 +64,6 @@ export default function BungalowSitePage() {
             {t("bungalowIntro2")}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed">
-            {t("bungalowIntro3")}
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
             {t("bungalowIntro4")}
           </p>
         </div>
@@ -187,7 +184,6 @@ export default function BungalowSitePage() {
             { key: "swimmingPool" },
             { key: "cafeSpaces" },
             { key: "integratedLandscape" },
-            { key: "sustainablePlanning" }
           ].map((feature, i) => (
             <li key={i} className="flex items-start text-lg text-gray-600">
               <svg className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

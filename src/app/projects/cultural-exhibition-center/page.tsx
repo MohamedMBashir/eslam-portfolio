@@ -137,61 +137,6 @@ export default function CulturalExhibitionCenterPage() {
         </div>
       </div>
       
-      {/* Plans Section */}
-      <div className="mb-16">
-        <TranslatedHeading title="floorPlans" />
-        <div className="grid grid-cols-1 gap-10">
-          <div>
-            <h3 className="font-medium mb-3 text-gray-900">{t("groundFloorPlan")}</h3>
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-              <Image
-                src="/projects/Project 2/Plan 1.jpg"
-                alt={t("groundFloorPlanAlt")}
-                fill
-                className="object-contain bg-white"
-                sizes="(max-width: 768px) 100vw, 1200px"
-              />
-            </div>
-          </div>
-          <div>
-            <h3 className="font-medium mb-3 text-gray-900">{t("firstFloorPlan")}</h3>
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-              <Image
-                src="/projects/Project 2/Plan 2.jpg"
-                alt={t("firstFloorPlanAlt")}
-                fill
-                className="object-contain bg-white"
-                sizes="(max-width: 768px) 100vw, 1200px"
-              />
-            </div>
-          </div>
-          <div>
-            <h3 className="font-medium mb-3 text-gray-900">{t("secondFloorPlan")}</h3>
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-              <Image
-                src="/projects/Project 2/Plan 3.jpg"
-                alt={t("secondFloorPlanAlt")}
-                fill
-                className="object-contain bg-white"
-                sizes="(max-width: 768px) 100vw, 1200px"
-              />
-            </div>
-          </div>
-          <div>
-            <h3 className="font-medium mb-3 text-gray-900">{t("thirdFloorPlan")}</h3>
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
-              <Image
-                src="/projects/Project 2/Plan 4.jpg"
-                alt={t("thirdFloorPlanAlt")}
-                fill
-                className="object-contain bg-white"
-                sizes="(max-width: 768px) 100vw, 1200px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      
       {/* Elevations and Sections */}
       <div className="mb-16">
         <TranslatedHeading title="elevationsAndSections" />

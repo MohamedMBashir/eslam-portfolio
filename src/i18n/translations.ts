@@ -7,7 +7,7 @@ export const translations = {
     cv: 'CV',
     
     // Hero
-    iam: 'I am',
+    iam: '',
     architectureStudent: 'Architecture Student',
     viewProjects: 'View Projects',
     portfolio: 'Portfolio',
@@ -106,17 +106,12 @@ export const translations = {
     culturalExhibitionIntro1: 'A cultural and exhibition center designed to showcase Istanbul\'s vast collection of historical artifacts, with over 700,000 pieces currently stored away.',
     culturalExhibitionIntro2: 'Located in a historically rich area overlooking the city\'s ancient walls and Yedikule, this center goes beyond a traditional museum. It offers an immersive experience with 3D animation rooms, interactive exhibitions, and a conference hall for cultural events.',
     culturalExhibitionIntro3: 'The architectural design respects the historical context while introducing contemporary elements that enhance the visitor experience. The building\'s form creates a dialogue with the ancient city walls, framing views and creating a visual connection to Istanbul\'s past.',
-    culturalExhibitionIntro4: 'By bringing Turkish, Ottoman, and Byzantine history to life, the project serves as both a preservation space and a vibrant hub for education and engagement. The exhibition spaces are designed with flexibility in mind, allowing for changing displays and different curatorial approaches.',
-    culturalExhibitionConcept: 'We began by stretching the volume to align seamlessly with the historical walls, respecting and enhancing their presence. Next, we carved out a dominant entrance strategically positioned to be visible from behind the historic structure, inviting and guiding visitors. Finally, we rotated the western section of the building to frame and emphasize the site\'s most significant historical views.',
+    culturalExhibitionConcept: 'We began by stretching the volume to align seamlessly with the historical walls, both respecting and enhancing their presence. Next, we carved out a prominent entrance, strategically positioned to remain visible from behind the historical walls, inviting and guiding visitors. Finally, we rotated the building\'s western section to frame and emphasize the site\'s most significant historical views.',
     
     localInternationalTourists: 'Local and international tourists',
     yedikuleLocation: 'Yedikule, Istanbul',
     conceptDevelopment: 'Concept Development',
     massingStudies: 'Massing Studies',
-    groundFloorPlan: 'Ground Floor Plan',
-    firstFloorPlan: 'First Floor Plan',
-    secondFloorPlan: 'Second Floor Plan',
-    thirdFloorPlan: 'Third Floor Plan',
     explodedDiagram: 'Exploded Diagram',
     sectionDetails50: 'Section Details 1/50',
     threeDRenderings: '3D Renderings',
@@ -152,7 +147,6 @@ export const translations = {
     // Project 3 Details
     bungalowIntro1: 'A comprehensive resort development featuring single and two-story bungalows with supporting amenities in a natural setting.',
     bungalowIntro2: 'This 3D model realistically represents a bungalow site, emphasizing accurate terrain, lighting, and materials. It captures the layout of single and two-story bungalows, along with key spaces like the restaurant, pool, and café.',
-    bungalowIntro3: 'The design prioritizes harmony with the natural landscape, positioning buildings to maximize views and natural ventilation while minimizing environmental impact. Careful consideration was given to the flow between private accommodations and public amenities.',
     bungalowIntro4: 'With detailed textures and natural lighting, the model enhances realism, providing a clear and immersive visualization of the site. The architectural language maintains consistency throughout the development while allowing for variations that respond to specific site conditions.',
     bungalowApproach1: 'The 3D modeling approach focused on realistic representation of materials, lighting, and spatial relationships to provide an accurate visualization of the completed project.',
     bungalowApproach2: 'The models show how natural materials like wood and stone integrate with the landscape, while thoughtful placement of structures preserves views and creates private outdoor spaces for each bungalow.',
@@ -172,7 +166,6 @@ export const translations = {
     swimmingPool: 'Swimming pool and recreational areas',
     cafeSpaces: 'Café and social spaces',
     integratedLandscape: 'Integrated landscape design',
-    sustainablePlanning: 'Sustainable site planning',
     
     // Project 3 Image Alt Texts
     bungalowSiteOverview: 'Bungalow Site Overview',
@@ -189,7 +182,6 @@ export const translations = {
     apartmentIntro1: 'A detailed apartment complex design featuring carefully crafted elevations and thoughtfully selected materials for urban residential living.',
     apartmentIntro2: 'This project showcases a detailed apartment design, featuring carefully crafted elevations and thoughtfully selected materials. The design addresses the need for quality urban housing with attention to both aesthetic appeal and functional living spaces.',
     apartmentIntro3: 'Two distinct models were developed for different locations - one for Esenyurt and another for Silivri, each responding to their specific urban contexts and target demographics. The architectural expression balances contemporary design with timeless elements.',
-    apartmentIntro4: 'Realistic textures, natural and interior lighting, and precise detailing bring the design to life, highlighting the building\'s form and materiality. The facades incorporate rhythmic elements and material variations to create visual interest while maintaining a cohesive overall appearance.',
     apartmentApproach1: 'The detailed 3D modeling approach allowed for exploration of different material options, lighting conditions, and viewing angles to refine the design.',
     apartmentApproach2: 'By creating photorealistic renderings in various lighting conditions, including both daytime and nighttime views, the models provide a comprehensive preview of how the buildings will appear and function in their environments.',
     
@@ -226,14 +218,14 @@ export const translations = {
     cv: 'CV',
     
     // Hero
-    iam: 'Ben',
+    iam: '',
     architectureStudent: 'Mimarlık Öğrencisi',
     viewProjects: 'Projelere Bak',
     portfolio: 'Portfolyo',
     
     // About
     aboutMe: 'Hakkımda',
-    aboutText: 'Mimarlık, karmaşık sorunları analiz etmeyi, tanımlamayı ve çözmeyi öğretiyor. Her proje, yaratıcı çözümler bulma ve ayrıntılara dikkat etme becerilerimi güçlendirdi. Mimarlık, hem teknik hem de sanatsal yönleriyle, benim için ilham verici ve ödüllendirici bir meslek haline geldi. Ayrıca, çevremdeki bağlamı analiz etmeyi, çevredeki sorunları ele almayı ve bunları çözmenin yollarını bulmayı öğretti.',
+    aboutText: 'Mimarlık, bana karmaşık problemleri analiz etme, tanımlama ve çözme becerisi kazandırdı. Her proje, yaratıcı çözümler bulma ve detaylara dikkat etme becerilerimi güçlendirdi. Hem teknik hem de sanatsal yönleriyle mimarlık, benim için ilham verici ve ödüllendirici bir meslek haline geldi. Ayrıca, etrafımdaki bağlamı analiz etmeyi, çevresel sorunları ele almayı ve bunlara çözüm yolları bulmayı öğretti.',
     education: 'Eğitim',
     bachelorOfArchitecture: 'Mimarlık Lisans',
     yildizTechnicalUniversity: 'Yıldız Teknik Üniversitesi, 2022-Devam Ediyor',
@@ -254,7 +246,7 @@ export const translations = {
     languageCenterHover: 'Bu proje, varlıklı topluluğu ve yurtdışında okuyan çok sayıda genç sakini ile tanınan bir bölge olan Etiler\'de tasarlanmış bir dil merkezidir. Bölgenin uluslararası bakış açısını göz önünde bulundurarak, merkez çok dilli eğitimi ve kültürel alışverişi teşvik eden dinamik bir öğrenme ortamı sunmayı amaçlamaktadır.',
     
     // Project 2
-    culturalExhibitionCenter: 'Kültürel Sergi Merkezi',
+    culturalExhibitionCenter: 'Arkeoloji ve Kültürel Deneyim Merkezi',
     istanbulHistorical: 'İstanbul Tarihi Eserler Vitrini',
     culturalExhibitionHover: 'Bu proje, şu anda 700.000\'den fazla parça depolanmış olan İstanbul\'un geniş tarihi eser koleksiyonunu sergilemek için tasarlanmış bir kültür ve sergi merkezidir. Şehrin kadim surları ve Yedikule\'ye bakan tarihi açıdan zengin bir bölgede yer alan merkez, geleneksel bir müzenin ötesine geçiyor. 3D animasyon odaları, interaktif sergiler ve kültürel etkinlikler için bir konferans salonu ile sürükleyici bir deneyim sunuyor. Türk, Osmanlı ve Bizans tarihini canlandırarak, proje hem bir koruma alanı hem de eğitim ve katılım için canlı bir merkez görevi görüyor.',
     
@@ -322,20 +314,16 @@ export const translations = {
     copyright: '© 2023 Eslam Ramadan. Tüm hakları saklıdır.',
     
     // Project 2 Details
-    culturalExhibitionIntro1: 'İstanbul\'un şu anda 700.000\'den fazla parçası depolanan geniş tarihi eser koleksiyonunu sergilemek için tasarlanmış bir kültür ve sergi merkezi.',
+    culturalExhibitionIntro1: 'İstanbul’da 700.000’den fazla arkeolojik eser müze depolarında sergilenemeden beklemektedir. Mevcut müzelerin yetersizliği bu ihtiyaca cevap verememektedir. Bu durumdan yola çıkarak, eserleri görünür kılacak ve halka ulaştıracak bir kültür ve sergi merkezi tasarlanmıştır.',
     culturalExhibitionIntro2: 'Şehrin kadim surları ve Yedikule\'ye bakan, tarihi açıdan zengin bir bölgede bulunan bu merkez, geleneksel bir müzenin ötesine geçiyor. 3D animasyon odaları, interaktif sergiler ve kültürel etkinlikler için bir konferans salonu ile sürükleyici bir deneyim sunuyor.',
     culturalExhibitionIntro3: 'Mimari tasarım, ziyaretçi deneyimini zenginleştiren çağdaş öğeler sunarken tarihi bağlamı da dikkate alıyor. Binanın formu, antik şehir surları ile bir diyalog oluşturarak, manzaraları çerçeveliyor ve İstanbul\'un geçmişiyle görsel bir bağlantı kuruyor.',
     culturalExhibitionIntro4: 'Türk, Osmanlı ve Bizans tarihini canlandırarak, proje hem bir koruma alanı hem de eğitim ve katılım için canlı bir merkez görevi görüyor. Sergi alanları, değişen sergiler ve farklı küratör yaklaşımlarına olanak tanıyacak şekilde esneklik düşünülerek tasarlanmıştır.',
-    culturalExhibitionConcept: 'Tarihi duvarlara sorunsuz bir şekilde uyum sağlamak için hacmi genişleterek başladık, böylece varlıklarını korumaya ve güçlendirmeye özen gösterdik. Ardından, tarihi yapının arkasından görülebilecek şekilde stratejik olarak konumlandırılmış, ziyaretçileri davet eden ve yönlendiren baskın bir giriş oluşturduk. Son olarak, alanın en önemli tarihi manzaralarını çerçevelemek ve vurgulamak için binanın batı kısmını döndürdük.',
+    culturalExhibitionConcept: 'Başlangıçta, yapıyı tarihi surlarla uyumlu bir şekilde hizalayarak hem onlara saygı gösteren hem de varlıklarını güçlendiren bir kütle oluşturduk. Ardından, ziyaretçileri davet eden ve yönlendiren, tarihi surların arkasından da görülebilecek şekilde konumlandırılmış belirgin bir giriş tanımladık. Son olarak, yapının batı bölümünü, alanın en önemli tarihi manzaralarını çerçevelemek ve vurgulamak amacıyla döndürdük.',
     
     localInternationalTourists: 'Yerel ve uluslararası turistler',
     yedikuleLocation: 'Yedikule, İstanbul',
     conceptDevelopment: 'Konsept Geliştirme',
     massingStudies: 'Kütle Çalışmaları',
-    groundFloorPlan: 'Zemin Kat Planı',
-    firstFloorPlan: 'Birinci Kat Planı',
-    secondFloorPlan: 'İkinci Kat Planı',
-    thirdFloorPlan: 'Üçüncü Kat Planı',
     explodedDiagram: 'Patlatılmış Diyagram',
     sectionDetails50: 'Kesit Detayları 1/50',
     threeDRenderings: '3D Görseller',
@@ -352,7 +340,7 @@ export const translations = {
     shop: 'Mağaza',
     
     // Project 2 Image Alt Texts
-    culturalCenterMainView: 'Kültürel Sergi Merkezi - Ana Görünüm',
+    culturalCenterMainView: 'Arkeoloji ve Kültürel Deneyim Merkezi - Ana Görünüm',
     initialConceptDiagram: 'İlk konsept diyagramı',
     conceptDevelopmentAlt: 'Konsept geliştirme',
     finalConceptDiagram: 'Final konsept diyagramı',
@@ -371,7 +359,6 @@ export const translations = {
     // Project 3 Details
     bungalowIntro1: 'Doğal bir ortamda destekleyici olanaklarla tek ve iki katlı bungalovlar içeren kapsamlı bir tatil köyü gelişimi.',
     bungalowIntro2: 'Bu 3D model, doğru arazi, aydınlatma ve malzemeleri vurgulayarak bungalov alanını gerçekçi bir şekilde temsil ediyor. Restoran, havuz ve kafe gibi önemli alanların yanı sıra tek ve iki katlı bungalovların düzenini yakalıyor.',
-    bungalowIntro3: 'Tasarım, doğal manzarayla uyumu önceliklendirir, binaları manzarayı ve doğal havalandırmayı en üst düzeye çıkarırken çevresel etkiyi en aza indirecek şekilde konumlandırır. Özel konaklama birimleri ile kamuya açık olanaklar arasındaki akışa özen gösterilmiştir.',
     bungalowIntro4: 'Detaylı dokular ve doğal aydınlatma ile model gerçekçiliği artırarak, alanın net ve sürükleyici bir görselleştirmesini sağlıyor. Mimari dil, belirli saha koşullarına uygun farklılıklara izin verirken, tüm geliştirme boyunca tutarlılığını koruyor.',
     bungalowApproach1: '3D modelleme yaklaşımı, tamamlanan projenin doğru bir görselleştirmesini sağlamak için malzemelerin, aydınlatmanın ve mekansal ilişkilerin gerçekçi bir şekilde temsil edilmesine odaklandı.',
     bungalowApproach2: 'Modeller, ahşap ve taş gibi doğal malzemelerin manzara ile nasıl bütünleştiğini gösterirken, yapıların düşünceli yerleşimi manzaraları korur ve her bungalov için özel dış mekanlar oluşturur.',
@@ -391,7 +378,6 @@ export const translations = {
     swimmingPool: 'Yüzme havuzu ve rekreasyon alanları',
     cafeSpaces: 'Kafe ve sosyal alanlar',
     integratedLandscape: 'Entegre peyzaj tasarımı',
-    sustainablePlanning: 'Sürdürülebilir alan planlaması',
     
     // Project 3 Image Alt Texts
     bungalowSiteOverview: 'Bungalov Alanı Genel Bakış',
@@ -408,7 +394,6 @@ export const translations = {
     apartmentIntro1: 'Kentsel konut yaşamı için özenle tasarlanmış cepheler ve dikkatle seçilmiş malzemeler içeren detaylı bir apartman kompleksi tasarımı.',
     apartmentIntro2: 'Bu proje, özenle hazırlanmış cepheler ve dikkatle seçilmiş malzemelerle detaylı bir apartman tasarımını sergiliyor. Tasarım, hem estetik çekicilik hem de fonksiyonel yaşam alanlarına dikkat ederek kaliteli kentsel konut ihtiyacını karşılıyor.',
     apartmentIntro3: 'Farklı konumlar için iki farklı model geliştirildi - biri Esenyurt için ve diğeri Silivri için, her biri kendi kentsel bağlamlarına ve hedef demografilerine yanıt veriyor. Mimari ifade, çağdaş tasarımı zamansız unsurlarla dengeler.',
-    apartmentIntro4: 'Gerçekçi dokular, doğal ve iç mekan aydınlatması ve hassas detaylandırma tasarımı canlandırarak binanın formunu ve malzeme yapısını vurguluyor. Cepheler, genel olarak uyumlu bir görünümü korurken görsel ilgi yaratmak için ritmik unsurlar ve malzeme çeşitlilikleri içeriyor.',
     apartmentApproach1: 'Detaylı 3D modelleme yaklaşımı, tasarımı geliştirmek için farklı malzeme seçeneklerinin, aydınlatma koşullarının ve görüntüleme açılarının keşfedilmesini sağladı.',
     apartmentApproach2: 'Hem gündüz hem de gece görünümleri dahil olmak üzere çeşitli aydınlatma koşullarında fotorealistik görselleştirmeler oluşturarak, modeller binaların ortamlarında nasıl görüneceğinin ve işlev göreceğinin kapsamlı bir önizlemesini sunuyor.',
     

@@ -66,9 +66,6 @@ export default function ApartmentComplexPage() {
           <p className="text-lg text-gray-600 leading-relaxed">
             {t("apartmentIntro3")}
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            {t("apartmentIntro4")}
-          </p>
         </div>
       </TranslatedSection>
       
