@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Eslam | Architecture Portfolio",
   description: "Architecture student portfolio showcasing creative projects and design work",
   icons: {
-    icon: '/window-logo.svg',
+    icon: '/window-logo.png',
     apple: '/window-logo.svg',
   },
 };
