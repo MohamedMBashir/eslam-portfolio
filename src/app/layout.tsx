@@ -21,7 +21,25 @@ export const metadata: Metadata = {
   description: "Architecture student portfolio showcasing creative projects and design work",
   icons: {
     icon: '/window-logo.png',
-    apple: '/window-logo.svg',
+    apple: '/window-logo.png',
+  },
+  openGraph: {
+    title: "Eslam | Architecture Portfolio",
+    description: "Architecture student portfolio showcasing creative projects and design work",
+    images: [
+      {
+        url: '/cover_image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Eslam Architecture Portfolio',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Eslam | Architecture Portfolio",
+    description: "Architecture student portfolio showcasing creative projects and design work",
+    images: ['/cover_image.jpg'],
   },
 };
 
